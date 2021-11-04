@@ -58,12 +58,8 @@ class FromBase45 extends Operation {
                 throw new OperationError(`Triplet too large: '${triple.join("")}'`);
             }
 
-            if (Math.floor(b / 256)) {
-                res.push(Math.floor(b / 256));
-            }
-            if (b % 256) {
-                res.push(b % 256);
-            }
+            res.push(b>>8);
+            res.push(b&0xff);
         }
 
         return res;
