@@ -6,8 +6,6 @@
  * @license Apache-2.0
  */
 
-import Utils from "../Utils.mjs";
-
 /**
  * Highlight to Base45
  */
